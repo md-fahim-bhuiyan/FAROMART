@@ -2,4 +2,10 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
-   return HttpResponse("Index Shop")
+   return render(request, 'shop/index.html')
+
+def about(request):
+   return render(request, 'shop/about.html')
+
+def contact(request):
+   return render(request, 'shop/contact/index.html')
